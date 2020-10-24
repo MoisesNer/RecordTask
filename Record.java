@@ -6,9 +6,9 @@ public class Record {
 		//recordLength ---> more than zero
 		//recordRanking ---> more than zero less than 6
 	
-	int id, recordRank;
-	String recordTitle, singerName;
-	double recordLength;
+	private int id, recordRank;
+	private String recordTitle, singerName;
+	private double recordLength;
 	
 	//constructor
 	
@@ -45,9 +45,7 @@ public class Record {
 	//SETTERS
 	
 	
-	public void setID(int id) {
-		
-		
+	public void setID(int id) {		
 		int randID = (int) ((Math.random()* 9901)+100);//formula (maximo - min +1) + min)
 		this.id = randID;
 	}
